@@ -1,0 +1,13 @@
+{
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+    "files.insertFinalNewline": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
