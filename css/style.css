@@ -391,6 +391,21 @@ body {
     opacity: 1;
     filter: blur(3px) brightness(80%); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__ {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -449,3 +464,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
