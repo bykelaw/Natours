@@ -1,0 +1,83 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    z-index: 2000;
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: 1000;
+    transform: scale(80);
+  }
+
+  &__nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+  }
+
+  &__list {
+    @include center;
+    text-align: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+        display: inline-block; // Without this the translation and padding might not work fine
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      font-weight: 300;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%,$color-white 100%
+      );
+
+      background-size: 220%;
+      transition:all 0.4s;
+      span{
+          display: inline-block;
+          margin-right: 1.5rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color:$color-primary;
+        transform: translateX(1rem);
+    }
+  }
+}
