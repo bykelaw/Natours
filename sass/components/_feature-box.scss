@@ -5,10 +5,12 @@
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: all .2s;
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
+    transition: all .3s;
+
+    @include respond(tab-port) {
+        padding: 2rem;
     }
+
     
     &__icon {
         font-size: 6rem;
@@ -16,8 +18,16 @@
         display: inline-block;
         background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
         // display: inline-flex; //add this fix to center the ::after sudo class
-        color: transparent;
         -webkit-background-clip: text;
+        color: transparent;
+        
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
-    &__text {}
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    
 }
