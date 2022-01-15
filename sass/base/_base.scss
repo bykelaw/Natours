@@ -7,8 +7,20 @@
 }
 
 html {
-    font-size: 62.5%;
-}
+    font-size: 62.5%;  // 1rem = 10px  which is 62.5% of 16px
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(phone){
+        // font-size: 30%;
+    }
+    @include respond(big-desktop){
+        font-size:75%;
+    }
+} 
 
 body {
     box-sizing: border-box;
@@ -17,4 +29,7 @@ body {
     line-height: 1.7;
     color: $color-grey-dark;
     padding: 3rem;
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
