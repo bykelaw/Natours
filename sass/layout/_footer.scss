@@ -1,8 +1,8 @@
 .footer {
-    color: $color-grey-white-1;
   background-color: $color-grey-dark-3;
   padding: 10rem 0;
   font-size: 1.4rem;
+    color: $color-grey-white-1;
 
   @include respond(tab-port){
     padding: 8rem 0;
@@ -42,9 +42,11 @@
 
   &__item {
     display: inline-block;
+
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
+
   }
 
   &__link {
@@ -57,10 +59,11 @@
       display: inline-block;
       transition:all .2s; 
     }
+
     &:hover,
     &:active {
       color: $color-primary;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.04);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(5deg) scale(1.3);
     }
   }

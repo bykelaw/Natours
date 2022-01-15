@@ -17,7 +17,12 @@
     }
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &::after {
+            transform: scaleX(1.5) scaleY(1.6);
+            opacity: 0;
+        }
     }
     &:active ,
     &:focus{
@@ -55,10 +60,7 @@
         z-index: -1;
         transition: all .4s;
     }
-    &:hover::after {
-        transform: scaleX(1.5) scaleY(1.6);
-        opacity: 0;
-    }
+
     &--animated {
         animation: moveInButton 1s ease-out .7s;
         animation-fill-mode: backwards;
