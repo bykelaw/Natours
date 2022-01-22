@@ -2,7 +2,7 @@
 
 ## I build this project while learn advance CSS and SASS. In the course of the project I was able  to learn the following:
 
-![Natours](Natours.gif)
+
 
 
 ## Learnt:
